@@ -1,0 +1,121 @@
+.content_box {
+    width: 1296px;
+    margin: auto;
+    height: 100%;
+    padding-top: 23px;
+  }
+  .select_box {
+    // justify-content: center;
+    .left_select {
+      top: 0;
+      left: 0;
+      padding: 4px;
+      border: 1px solid rgba(30, 32, 35, 0.1);
+      border-radius: 12px;
+      .left_select_word {
+        white-space: nowrap;
+        height: 32px;
+        padding: 0 12px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+        cursor: pointer;
+        z-index: 2;
+        text-align: center;
+      }
+      .bg_grey {
+        background-color: #edf2f5;
+        height: 32px;
+        border-radius: 8px;
+      }
+    }
+    .right_select {
+      transition: all 0.3s ease-in-out;
+      margin: 0 auto;
+      justify-content: center;
+      min-height: 40px;
+      width: 700px;
+      height: 40px;
+      flex-wrap: wrap;
+      overflow: hidden;
+      .right_select_word {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #1c1f23;
+        line-height: 40px;
+        padding: 0 12px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .click {
+        background-color: #edf2f5;
+      }
+    }
+    .spreed {
+      height: 220px;
+    }
+    .shrink {
+      height: 40px;
+    }
+  }
+  .picture_box {
+    margin: 20px auto;
+    position: relative;
+    .picture_box_item {
+      width: 239px;
+      img {
+        width: 239px;
+        border-radius: 12px;
+      }
+      .hover_box {
+        position: absolute;
+        width: 100%;
+        padding: 12px;
+        justify-content: space-between;
+        transition: opacity 0.25s ease-in-out;
+        pointer-events: none;
+        .hover_box_collection {
+          position: relative;
+          .collect_button_left {
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            color: #fff;
+            background-color: #ff5967;
+            border-color: #ff5967;
+            height: 40px;
+            width: 52px;
+            text-align: center;
+          }
+          .collect_button_right {
+            width: 24px;
+            color: #fff;
+            background-color: #ff5967;
+            border-color: #ff5967;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            height: 40px;
+          }
+          .collect_button_right::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            width: 1px;
+            height: 16px;
+            background-color: #fff;
+            opacity: 0.16;
+          }
+        }
+        .hover_box_favarite {
+        }
+      }
+    }
+  }
+  .picture_box > div {
+    float: left;
+    margin-right: 20px;
+  }
