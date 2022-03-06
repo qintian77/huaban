@@ -15,4 +15,4 @@ npm run build
 npm run lint
 ```
 
-
+node 版本12+
